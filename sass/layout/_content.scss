@@ -1,0 +1,36 @@
+.content {
+  height: calc(100vh - 5.5rem);
+  width: 100%;
+  padding: 20rem;
+  z-index: -1;
+
+  background-image: linear-gradient(
+      rgba($color-black, 0.15),
+      rgba($color-black, 0.15)
+    ),
+    url("https://combo.staticflickr.com/ap/build/images/sohp/2020-top-25/Tree_and_Morning_Mist_Jos_Buurmans.jpg");
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 20rem;
+    height: 100%;
+    text-align: center;
+
+    > *:not(:last-child) {
+      margin-bottom: 5rem;
+    }
+  }
+
+  &__btn {
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 2rem 2.5rem;
+  }
+}
